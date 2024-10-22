@@ -4,6 +4,6 @@ namespace ExpenseTracker.Models{
         private string Password {get; set;}
 
         private string Email {get; set;}
-
+        private int Id {get; set;}
     }
 }
