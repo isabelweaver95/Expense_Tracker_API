@@ -1,6 +1,6 @@
 namespace ExpenseTracker.Models{
     public class Catagory{
-        private int Id {get; set;}
-        private string Name{get; set;}
+        public int Id {get; set;}
+        public string Name{get; set;}
     }
 }
