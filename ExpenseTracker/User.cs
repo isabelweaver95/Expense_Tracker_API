@@ -6,12 +6,15 @@ namespace ExpenseTracker.Models{
         public string Email {get; set;}
         public string Salt {get; set;}
 
+        public List<Expense> Expenses {get; set;} = new List<Expense>();
+
         //This is a method to store and hide the password
         public void SetPassword(string password){
             Salt = GenerateSalt();
             PasswordHash = HashPassword(password)
         }
 
+        //This function hashes the password that is sent in
         private string HashPassword(string password){
             using(var sha256 = sha256.Create()){
                 var combined = Encoding.UTF8.GetBytes(password + Salt);
@@ -19,11 +22,37 @@ namespace ExpenseTracker.Models{
             }
         }
 
+        //This function generates the hash.
         private string GenerateSalt(){
             var rng = new RNGCryptoServiceProvider();
             var saltBytes = new byte[16];
             rng.GetBytes(saltBytes);
             return Convert.ToBase64String(saltBytes);
         }
-    }
+
+        //This Function will use to authenticate a person logging in
+        public bool Authenticate(string username, string password){
+            if(username == Username){
+
+                string passwordCheck = HashPassword(password);
+
+                if(passwordCheck == PasswordHash){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }
+
+        //This will add an expense
+        public void AddExpense(Expense expense){
+            Expenses.add(expense);
+        }
+
+        public void RemoveExpense(Expense expense){
+            Expenses.remove(expense);
+        }
+   }
 }

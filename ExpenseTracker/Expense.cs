@@ -6,6 +6,10 @@ namespace ExpenseTracker.Models{
         public string Description {get; set;}
         public int CatagoryID {get; set;}
         public Catagory catagory {get; set;}
+        public int UserID {get; set;}
+        public User user {get; set;}
+
+        
 
     }
 }
