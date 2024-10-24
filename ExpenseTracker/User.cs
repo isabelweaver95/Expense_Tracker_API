@@ -55,11 +55,6 @@ namespace ExpenseTracker.Models{
             Expenses.remove(expense);
         }
 
-        /// <summary>
-        /// This function will loop through all of the expenses 
-        /// and add them up to get the total expenses.
-        /// </summary>
-        /// <returns>The total expenses.</returns>
 
         public decimal GetTotalExpense(){
             decimal totalAmount = 0;
@@ -71,14 +66,15 @@ namespace ExpenseTracker.Models{
         }
 
         public decimal GetTotalExpenseByCatagory(Catagory catagory){
-            decimal totalAmount = 0;
-            
+
             foreach(Expense expense in Expenses){
-                if(catagory.Name = expense.catagory.Name)
-                totalAmount += expense.Amount;
+                if(catagory.Name = expense.catagory.Name){
+                    return expense.catagory.GetTotalExpense();
+                }
+
             }
-            
-            return totalAmount;
+
+            return -1.0;
         }
    }
 }

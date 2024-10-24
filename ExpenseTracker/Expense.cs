@@ -9,7 +9,7 @@ namespace ExpenseTracker.Models{
         public int UserID {get; set;}
         public User user {get; set;}
 
-        
+
 
     }
 }
