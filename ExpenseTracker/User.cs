@@ -3,8 +3,10 @@ namespace ExpenseTracker.Models{
         public int Id {get; set;}
         public string Username {get; set;}
         public string PasswordHash {get; set;}
+        public string Name {get; set;}
         public string Email {get; set;}
         public string Salt {get; set;}
+        
 
         public List<Expense> Expenses {get; set;} = new List<Expense>();
 
@@ -65,6 +67,7 @@ namespace ExpenseTracker.Models{
             return totalAmount;
         }
 
+        //User will send in a category and then will return the total expenses by the category. 
         public decimal GetTotalExpenseByCatagory(Catagory catagory){
 
             foreach(Expense expense in Expenses){
@@ -75,6 +78,19 @@ namespace ExpenseTracker.Models{
             }
 
             return -1.0;
+        }
+
+        //updating only name and email. 
+        public void Update(string newName = null, string newEmail = null){
+            if (!string.IsNullOrEmpty(newName))
+            {
+                this.Name = newName;
+            }
+
+            if (!string.IsNullOrEmpty(newEmail))
+            {
+                this.Email = newEmail;
+            }
         }
    }
 }
