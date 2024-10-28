@@ -1,3 +1,7 @@
+using System;
+using System.Security.Cryptography;
+using System.Text;
+
 namespace ExpenseTracker.Models{
     public class User{
         public int Id {get; set;}
@@ -13,12 +17,13 @@ namespace ExpenseTracker.Models{
         //This is a method to store and hide the password
         public void SetPassword(string password){
             Salt = GenerateSalt();
-            PasswordHash = HashPassword(password)
+            PasswordHash = HashPassword(password);
         }
 
         //This function hashes the password that is sent in
         private string HashPassword(string password){
-            using(var sha256 = sha256.Create()){
+            using (var sha256 = SHA256.Create())
+            {
                 var combined = Encoding.UTF8.GetBytes(password + Salt);
                 return Convert.ToBase64String(sha256.ComputeHash(combined));
             }
@@ -50,11 +55,11 @@ namespace ExpenseTracker.Models{
 
         //This will add an expense
         public void AddExpense(Expense expense){
-            Expenses.add(expense);
+            Expenses.Add(expense);
         }
 
         public void RemoveExpense(Expense expense){
-            Expenses.remove(expense);
+            Expenses.Remove(expense);
         }
 
 
@@ -71,13 +76,13 @@ namespace ExpenseTracker.Models{
         public decimal GetTotalExpenseByCatagory(Catagory catagory){
 
             foreach(Expense expense in Expenses){
-                if(catagory.Name = expense.catagory.Name){
-                    return expense.catagory.GetTotalExpense();
+                if(catagory.Name == expense.Category.Name){
+                    return expense.Category.GetTotalExpense();
                 }
 
             }
 
-            return -1.0;
+            return -1;
         }
 
         //updating only name and email. 

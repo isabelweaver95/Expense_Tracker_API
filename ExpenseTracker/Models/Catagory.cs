@@ -8,21 +8,22 @@ namespace ExpenseTracker.Models{
         public List<Expense> Expenses {get; set;}
 
         public void AddExpense(Expense expense){
-            Expenses.add(expense);
+            Expenses.Add(expense);
         }
 
         public decimal GetTotalExpense(){
-            decimal totalExpense = 0.0;
+            decimal totalExpense = 0;
 
             foreach(Expense expense in Expenses){
                 totalExpense = expense.Amount;
             }
+            return totalExpense;
         }
 
         public void RemoveExpense(Expense expense){
             foreach(Expense checkExpense in Expenses){
-                if(expense.date == checkExpense.date){
-                    Expenses.remove(expense);
+                if(expense.Date == checkExpense.Date){
+                    Expenses.Remove(expense);
                 }
             }
         }
