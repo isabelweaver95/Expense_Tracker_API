@@ -62,7 +62,11 @@ namespace ExpenseTracker.Models{
             Expenses.Remove(expense);
         }
 
-
+        // public void LoadExpenses(DatabaseHelper db)
+        // {
+        //     Expenses = db.GetExpensesForUser(this.Id);
+        // }
+        
         public decimal GetTotalExpense(){
             decimal totalAmount = 0;
             foreach(Expense expense in Expenses){
