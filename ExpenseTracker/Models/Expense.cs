@@ -7,10 +7,13 @@ namespace ExpenseTracker.Models{
 
         //This is the forign keys for the database.
         public int CatagoryId {get; set;}
-        public Catagory Category {get; set;}
+        public Catagory Category {get; set;} = new Catagory();       
         public int UserID {get; set;}
 
-    
+        public Expense(){
+            Description = " ";
+        }
+        
         //Connecting category to expense.
         public void ConnectToCategory(Catagory catagory){
             CatagoryId = catagory.Id;

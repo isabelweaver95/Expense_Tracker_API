@@ -12,6 +12,15 @@ namespace ExpenseTracker.Models{
         public string Salt {get; set;}
         
 
+        public User(string email, string username, string name)
+        {
+            Email = email;
+            Username = username;
+            Name = name;
+            PasswordHash = " ";
+            Salt = " ";
+        }
+
         public List<Expense> Expenses {get; set;} = new List<Expense>();
 
         //This is a method to store and hide the password
@@ -30,7 +39,7 @@ namespace ExpenseTracker.Models{
         }
 
         //This function generates the hash.
-        private string GenerateSalt(){
+        private static string GenerateSalt(){
             var rng = new RNGCryptoServiceProvider();
             var saltBytes = new byte[16];
             rng.GetBytes(saltBytes);
@@ -90,7 +99,7 @@ namespace ExpenseTracker.Models{
         }
 
         //updating only name and email. 
-        public void Update(string newName = null, string newEmail = null){
+        public void Update(string newName, string newEmail){
             if (!string.IsNullOrEmpty(newName))
             {
                 this.Name = newName;

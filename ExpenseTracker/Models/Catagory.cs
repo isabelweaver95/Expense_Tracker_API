@@ -5,7 +5,11 @@ namespace ExpenseTracker.Models{
         public string Name {get; set;}
 
         //Establishing a one to many relationship with Expenses
-        public List<Expense> Expenses {get; set;}
+        public List<Expense> Expenses {get; set;} = new List<Expense>();
+
+        public Catagory(){
+            Name = " ";
+        }
 
         public void AddExpense(Expense expense){
             Expenses.Add(expense);
