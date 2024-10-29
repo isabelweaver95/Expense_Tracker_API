@@ -26,5 +26,12 @@ CREATE TABLE Expense(
         -- public Catagory Category {get; set;}
         -- public int UserID {get; set;}
 
-    Id INT KEY AUTO_INCRAMENT
+    Id INT KEY AUTO_INCRAMENT,
+    Amount DECIMAL(10,2) NOT NULL,
+    Date DateTime DEFAULT CURRENT_TIMESTAMP,
+    Description VARCHAR(100) NOT NULL,
+
+    FOREIGN KEY (UserId) REFERENCES User(Id),
+    FOREIGN KEY (CategoryId) REFERENCES Category(Id)
+
 );

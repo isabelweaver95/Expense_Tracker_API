@@ -7,6 +7,8 @@ namespace ExpenseTracker.Models{
         //Establishing a one to many relationship with Expenses
         public List<Expense> Expenses {get; set;} = new List<Expense>();
 
+
+        //The constructor. :)
         public Catagory(){
             Name = " ";
         }
