@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sAi066E9CRY=",
+  "dgSpecHash": "k+7vpbfinms=",
   "success": true,
   "projectFilePath": "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/ExpenseTracker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/isabelkamphaus/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/isabelkamphaus/.nuget/packages/mysqlconnector/2.3.7/mysqlconnector.2.3.7.nupkg.sha512"
+  ],
   "logs": []
 }
