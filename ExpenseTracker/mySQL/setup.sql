@@ -2,6 +2,14 @@ CREATE DATABASE IF NOT EXSISTS expense_tracker_db;
 USE expense_tracker_db;
 
 CREATE TABLE User (
+        -- public int Id {get; set;}
+        -- public string Username {get; set;}
+        -- public string PasswordHash {get; set;}
+        -- public string Name {get; set;}
+        -- public string Email {get; set;}
+        -- public string Salt {get; set;}
+        -- public List<Expense> Expenses {get; set;} = new List<Expense>();
+        
     Id INT KEY AUTO_INCRAMENT,
     Username VARCHAR(100) NOT NULL UNIQUE,
     Name VARCHAR(100),
@@ -11,6 +19,10 @@ CREATE TABLE User (
 );
 
 CREATE TABLE Catagory(
+    -- public int Id {get; set;}
+    -- public string Name {get; set;}
+    -- public List<Expense> Expenses {get; set;} = new List<Expense>();
+
     Id INT KEY AUTO_INCRAMENT,
     Name VARCHAR(100)
 );
