@@ -1,0 +1,6 @@
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.csproj.AssemblyReference.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.AssemblyInfoInputs.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.AssemblyInfo.cs
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.csproj.CoreCompileInputs.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.sourcelink.json

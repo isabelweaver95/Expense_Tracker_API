@@ -28,4 +28,5 @@ namespace ExpenseTracker.Database{
                 }
             }
         }
+    }
 }
