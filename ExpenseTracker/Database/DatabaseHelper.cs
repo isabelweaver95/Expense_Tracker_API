@@ -1,5 +1,6 @@
 using ExpenseTracker.Models;
-using MySql.Data.MySqlClient;
+using MySqlConnector
+
 
 namespace ExpenseTracker.Database{
     public class DatabaseHelper{
@@ -10,14 +11,14 @@ namespace ExpenseTracker.Database{
             this.connectionString = connectionString;
         }
 
-    // Example: Add a user
+        // Example: Add a user
         public void AddUser(User user)
         {
-            using (var connection = new MySqlConnection(connectionString))
+            using (var connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
             {
                 connection.Open();
                 string query = "INSERT INTO User (Username, PasswordHash, Name, Email, Salt) VALUES (@Username, @PasswordHash, @Name, @Email, @Salt)";
-                using (var cmd = new MySqlCommand(query, connection))
+                using (var cmd = new MySql.Data.MySqlClient.MySqlCommand(query, connection))
                 {
                     cmd.Parameters.AddWithValue("@Username", user.Username);
                     cmd.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
@@ -30,3 +31,4 @@ namespace ExpenseTracker.Database{
         }
     }
 }
+    
