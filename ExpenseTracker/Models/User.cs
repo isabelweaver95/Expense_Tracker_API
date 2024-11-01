@@ -80,11 +80,6 @@ namespace ExpenseTracker.Models{
         public void RemoveExpense(Expense expense){
             Expenses.Remove(expense);
         }
-
-        // public void LoadExpenses(DatabaseHelper db)
-        // {
-        //     Expenses = db.GetExpensesForUser(this.Id);
-        // }
         
         public decimal GetTotalExpense(){
             decimal totalAmount = 0;
@@ -120,5 +115,10 @@ namespace ExpenseTracker.Models{
                 this.Email = newEmail;
             }
         }
+   
+        // public void LoadExpenses(DatabaseHelper db)
+        // {
+        //     Expenses = db.GetExpensesForUser(this.Id);
+        // }
    }
 }
