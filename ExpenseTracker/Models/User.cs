@@ -14,7 +14,7 @@ namespace ExpenseTracker.Models{
         //This connects the expense class to the user class.
         public List<Expense> Expenses {get; set;} = new List<Expense>();
 
-
+        // Constructors.
         public User(string email, string username, string name)
         {
             Email = email;
@@ -22,6 +22,15 @@ namespace ExpenseTracker.Models{
             Name = name;
             PasswordHash = " ";
             Salt = " ";
+        }
+
+        public User(int id, string email, string username, string name, string passwordHash, string salt){
+            Id = id;
+            Email = email;
+            Username = username;
+            Name = name;
+            PasswordHash = passwordHash;
+            Salt = salt;
         }
 
         //This is a method to store and hide the password

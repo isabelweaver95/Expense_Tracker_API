@@ -13,6 +13,16 @@ namespace ExpenseTracker.Models{
             Name = " ";
         }
 
+        public Catagory(string name){
+            Name = name;
+        }
+
+        public Catagory(int id, string name){
+            Id = id;
+            Name = name;
+        }
+
+        
         public void AddExpense(Expense expense){
             Expenses.Add(expense);
         }

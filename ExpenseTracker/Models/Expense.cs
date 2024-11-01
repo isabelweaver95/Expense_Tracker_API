@@ -10,10 +10,26 @@ namespace ExpenseTracker.Models{
         public Catagory Category {get; set;} = new Catagory();       
         public int UserID {get; set;}
 
+
+        //Constructors
         public Expense(){
             Description = " ";
         }
-        
+
+        public Expense(decimal amount, DateTime date, string description){
+            Amount = amount;
+            Date = date;
+            Description = description;
+        }
+        public Expense(int id, int userID, decimal amount, DateTime date, string description, int categoryID){
+            Id = id;
+            UserID = userID;
+            Amount = amount;
+            Date = date;
+            Description = description;
+            CatagoryId = categoryID;    
+        }
+
         //Connecting category to expense.
         public void ConnectToCategory(Catagory catagory){
             CatagoryId = catagory.Id;
