@@ -1,5 +1,5 @@
 using ExpenseTracker.Models;
-using MySqlConnector
+using MySqlConnector;
 
 
 namespace ExpenseTracker.Database{
