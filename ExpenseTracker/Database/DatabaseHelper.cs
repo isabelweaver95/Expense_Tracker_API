@@ -203,5 +203,56 @@ public class DatabaseHelper
         }
     }
 
-    
+    //Now creating the delete functions.
+
+    //Delete for user
+    public void DeleteUser(User user){
+        using (var connection = new MySqlConnection(connectionString))
+        {
+            connection.Open();
+            string query = "DELETE FROM User SET Username = @Username, PasswordHash = @PasswordHash, Name = @Name, Email = @Email, Salt = @Salt WHERE Id = @Id";
+            using (var cmd = new MySqlCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@Username", user.Username);
+                cmd.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
+                cmd.Parameters.AddWithValue("@Name", user.Name);
+                cmd.Parameters.AddWithValue("@Email", user.Email);
+                cmd.Parameters.AddWithValue("@Salt", user.Salt);
+                cmd.Parameters.AddWithValue("@Id", user.Id);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
+
+    //delete for Expense
+    public void DeleteExpense(Expense expense){
+        using(var connection = new MySqlConnection(connectionString)){
+            connection.Open();
+            string query = "DELETE FROM Expense SET UserID = @UserID, Amount = @Amount, Date = @Date, Description = @Description, CategoryID = @CategoryID WHERE Id = @Id";
+                
+            using(var cmd = new MySqlCommand(query, connection)){
+                cmd.Parameters.AddWithValue("@UserID", expense.UserID);
+                cmd.Parameters.AddWithValue("@Amount", expense.Amount);
+                cmd.Parameters.AddWithValue("@Date", expense.Date);
+                cmd.Parameters.AddWithValue("@Description", expense.Description);
+                cmd.Parameters.AddWithValue("@CategoryID", expense.CatagoryId);
+                cmd.Parameters.AddWithValue("@Id", expense.Id);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
+
+    //delete for catagory
+    public void DeleteCatagory(Catagory catagory){
+        using(var connection = new MySqlConnection(connectionString)){
+            connection.Open();
+            string query = "DELETE FROM Catagory SET Name = @Name WHERE Id = @Id";
+
+            using(var cmd = new MySqlCommand(query, connection)){
+                cmd.Parameters.AddWithValue("@Name", catagory.Name);
+                cmd.Parameters.AddWithValue("@Id", catagory.Id);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
 }
