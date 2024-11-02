@@ -2,7 +2,7 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using ExpenseTracker.Models;
 
-namespace ExpenseTracker.Data{
+namespace ExpenseTracker.Database{
     public class DatabaseHelper
     {
         private readonly string connectionString;

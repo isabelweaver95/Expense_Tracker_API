@@ -116,9 +116,5 @@ namespace ExpenseTracker.Models{
             }
         }
    
-        // public void LoadExpenses(DatabaseHelper db)
-        // {
-        //     Expenses = db.GetExpensesForUser(this.Id);
-        // }
    }
 }
