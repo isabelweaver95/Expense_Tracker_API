@@ -15,6 +15,14 @@ namespace ExpenseTracker.Models{
         public List<Expense> Expenses {get; set;} = new List<Expense>();
 
         // Constructors.
+        public User(){
+            PasswordHash = " ";
+            Salt = " ";
+            Email = " ";
+            Name = " ";
+            Username = " ";
+        }
+        
         public User(string email, string username, string name)
         {
             Email = email;

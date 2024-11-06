@@ -16,7 +16,7 @@ namespace ExpenseTracker.Database{
         // Create Methods
 
         //This will add a user (create)
-        public void AddUser(User user)
+        public int AddUser(User user)
         {
             using (var connection = new MySqlConnection(connectionString))
             {
@@ -29,9 +29,17 @@ namespace ExpenseTracker.Database{
                     cmd.Parameters.AddWithValue("@Name", user.Name);
                     cmd.Parameters.AddWithValue("@Email", user.Email);
                     cmd.Parameters.AddWithValue("@Salt", user.Salt);
+
+                    // Execute the insert
                     cmd.ExecuteNonQuery();
+
+                    // Retrieve the last inserted ID
+                    cmd.CommandText = "SELECT LAST_INSERT_ID();";
+                    user.Id = Convert.ToInt32(cmd.ExecuteScalar());
                 }
             }
+
+            return user.Id;
         }
 
         //This will add an expense (Create)
@@ -39,10 +47,9 @@ namespace ExpenseTracker.Database{
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT INTO Expense (UserID, Amount, Date, Description, CategoryID) VALUES (@UserID, @Amount, @Date, @Description, @CategoryID)";
+                string query = "INSERT INTO Expense (Amount, Date, Description, CategoryID) VALUES (@UserID, @Amount, @Date, @Description, @CategoryID)";
                 using (var cmd = new MySqlCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("@UserID", expense.UserID);
                     cmd.Parameters.AddWithValue("@Amount", expense.Amount);
                     cmd.Parameters.AddWithValue("@Date", expense.Date);
                     cmd.Parameters.AddWithValue("@Description", expense.Description);
@@ -256,5 +263,90 @@ namespace ExpenseTracker.Database{
                 }
             }
         }
+    
+
+        public User GetUserById(int userId)
+        {
+            User user = new User();
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Id, Username, PasswordHash FROM Users WHERE Id = @Id";
+
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", userId);
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            //Username, PasswordHash, Name, Email, Salt\
+                            user.Id = reader.GetInt32("Id");
+                            user.Username = reader.GetString("Username");
+                            user.Name = reader.GetString("Name");
+                            user.Email = reader.GetString("Email");
+                            user.Salt = reader.GetString("Salt");
+                            user.PasswordHash = reader.GetString("PasswordHash");
+                        }
+                    }
+                }
+            }
+            return user;
+        }  
+
+        public Catagory GetCatagoryById(int catagoryId)
+        {
+            Catagory catagory = new Catagory();
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Id, Name FROM Catagory WHERE Id = @Id";
+
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", catagoryId);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            catagory.Id = reader.GetInt32("Id");
+                            catagory.Name = reader.GetString("Name");
+                        }
+                    }
+                }
+            }
+            return catagory;
+        }
+
+        public Expense GetExpenseById(int expenseId)
+        {
+            Expense expense = new Expense();
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Id, UserID, Amount, Date, Description, CategoryID FROM Expense WHERE Id = @Id";
+
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", expenseId);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            expense.Id = reader.GetInt32("Id");
+                            expense.UserID = reader.GetInt32("UserID");
+                            expense.Amount = reader.GetDecimal("Amount");
+                            expense.Date = reader.GetDateTime("Date");
+                            expense.Description = reader.GetString("Description");
+                            expense.CatagoryId = reader.GetInt32("CategoryID");
+                        }
+                    }
+                }
+            }
+            return expense;
+        }
+                
     }
+
 }
