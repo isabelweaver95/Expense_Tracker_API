@@ -43,7 +43,7 @@ namespace ExpenseTracker.Database{
         }
 
         //This will add an expense (Create)
-        public void AddExpense(Expense expense){
+        public int AddExpense(Expense expense){
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
@@ -55,12 +55,17 @@ namespace ExpenseTracker.Database{
                     cmd.Parameters.AddWithValue("@Description", expense.Description);
                     cmd.Parameters.AddWithValue("@CategoryID", expense.CatagoryId);
                     cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = "SELECT LAST_INSERT_ID();";
+                    expense.Id = Convert.ToInt32(cmd.ExecuteScalar());
                 }
             }
+
+            return expense.Id; 
         }
 
         //This will add a category (Create)
-        public void AddCatagory(Catagory catagory){
+        public int AddCatagory(Catagory catagory){
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
@@ -69,8 +74,13 @@ namespace ExpenseTracker.Database{
                 {
                     cmd.Parameters.AddWithValue("@Name", catagory.Name);
                     cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = "SELECT LAST_INSERT_ID();";
+                    catagory.Id = Convert.ToInt32(cmd.ExecuteScalar());
                 }
             }
+
+            return catagory.Id;
         }
 
 

@@ -1,0 +1,7 @@
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_ExpenseTracker.Tests
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.csproj.AssemblyReference.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.AssemblyInfoInputs.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.AssemblyInfo.cs
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.csproj.CoreCompileInputs.cache
+/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/Debug/net8.0/ExpenseTracker.Tests.sourcelink.json

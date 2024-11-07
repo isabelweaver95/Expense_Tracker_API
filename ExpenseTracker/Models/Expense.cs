@@ -21,6 +21,7 @@ namespace ExpenseTracker.Models{
             Date = date;
             Description = description;
         }
+        
         public Expense(int id, int userID, decimal amount, DateTime date, string description, int categoryID){
             Id = id;
             UserID = userID;
