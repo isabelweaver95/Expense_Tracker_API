@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExpenseTracker
-build_property.ProjectDir = /Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/
+build_property.ProjectDir = /Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
