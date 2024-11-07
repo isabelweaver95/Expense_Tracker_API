@@ -36,12 +36,12 @@ namespace ExpenseTracker.Tests.Helper
             var category = new Catagory("Clothes");
 
             // Act
-            category.Id = dbHelper.AddCategory(category);
+            category.Id = dbHelper.AddCatagory(category);
 
             // Assert
             Assert.True(category.Id > 0);
 
-            var categoryTest = dbHelper.GetCategoryById(category.Id);
+            var categoryTest = dbHelper.GetCatagoryById(category.Id);
             Assert.NotNull(categoryTest);
             Assert.Equal(category.Name, categoryTest.Name);
         }
@@ -51,7 +51,8 @@ namespace ExpenseTracker.Tests.Helper
         {
             // Arrange
             var dbHelper = new DatabaseHelper("Server=localhost;Database=expense_tracker_db;User ID=root;Password=Mk95161447!;Port=3306;");
-            var expense = new Expense(20.00, DateTime.Now, "test");
+  
+            var expense = new Expense(10.00M, DateTime.Now, "test");
 
             // Act
             expense.Id = dbHelper.AddExpense(expense);

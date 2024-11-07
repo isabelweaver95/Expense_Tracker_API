@@ -41,6 +41,15 @@ namespace ExpenseTracker.Models{
             Salt = salt;
         }
 
+        public User( string email, string username, string name, string passwordHash, string salt){
+            Email = email;
+            Username = username;
+            Name = name;
+            PasswordHash = passwordHash;
+            Salt = salt;
+        }
+
+
         //This is a method to store and hide the password
         public void SetPassword(string password){
             Salt = GenerateSalt();

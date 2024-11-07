@@ -106,7 +106,7 @@ namespace ExpenseTracker.Database{
                             string passwordHash = reader.GetString("PasswordHash");
                             string salt = reader.GetString("Salt");
 
-                            User user = new User(id, username, name, email, passwordHash, salt);
+                            User user = new User(id,username, name, email, passwordHash, salt);
                             users.Add(user);
                         }
                     }
