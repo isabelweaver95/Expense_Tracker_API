@@ -38,3 +38,43 @@
 /Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.pdb
 /Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.genruntimeconfig.cache
 /Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ref/ExpenseTracker.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ExpenseTracker
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ExpenseTracker.deps.json
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ExpenseTracker.runtimeconfig.json
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ExpenseTracker.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ExpenseTracker.pdb
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/K4os.Compression.LZ4.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/K4os.Compression.LZ4.Streams.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/K4os.Hash.xxHash.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/MySql.Data.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/MySqlConnector.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/ZstdSharp.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win-x64/native/comerr64.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win-x64/native/gssapi64.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win-x64/native/k5sprt64.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win-x64/native/krb5_64.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win-x64/native/krbcc64.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Windows.Extensions.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.csproj.AssemblyReference.cache
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.AssemblyInfoInputs.cache
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.AssemblyInfo.cs
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.csproj.CoreCompileInputs.cache
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.sourcelink.json
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseT.567C5DF3.Up2Date
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/refint/ExpenseTracker.dll
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.pdb
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ExpenseTracker.genruntimeconfig.cache
+/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/obj/Debug/net8.0/ref/ExpenseTracker.dll

@@ -6578,11 +6578,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/ExpenseTracker.Tests.csproj",
+      "projectUniqueName": "/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker.Tests/ExpenseTracker.Tests.csproj",
       "projectName": "ExpenseTracker.Tests",
-      "projectPath": "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/ExpenseTracker.Tests.csproj",
+      "projectPath": "/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker.Tests/ExpenseTracker.Tests.csproj",
       "packagesPath": "/Users/isabelkamphaus/.nuget/packages/",
-      "outputPath": "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker.Tests/obj/",
+      "outputPath": "/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/isabelkamphaus/.nuget/NuGet/NuGet.Config"
@@ -6597,8 +6597,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/ExpenseTracker.csproj": {
-              "projectPath": "/Users/isabelkamphaus/Documents/Expense Tracker API/Expense_Tracker_API/ExpenseTracker/ExpenseTracker.csproj"
+            "/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/ExpenseTracker.csproj": {
+              "projectPath": "/Users/isabelkamphaus/Documents/Expense_Tracker_API/Expense_Tracker_API/ExpenseTracker/ExpenseTracker.csproj"
             }
           }
         }

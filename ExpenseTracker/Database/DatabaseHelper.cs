@@ -7,9 +7,9 @@ namespace ExpenseTracker.Database{
     {
         private readonly string connectionString;
 
-        public DatabaseHelper(string connectionString)
+        public DatabaseHelper()
         {
-            this.connectionString = connectionString;
+            this.connectionString = "Server=localhost; Database=expense_tracker_db; User ID=root; Password=Mk95161447!; Port=3306;";
         }
 
         //Starting to create the CRUD methods

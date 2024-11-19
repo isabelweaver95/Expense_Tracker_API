@@ -10,7 +10,7 @@ namespace ExpenseTracker.Tests.Helper
         public void Test_AddUser()
         {
             // Arrange
-            var dbHelper = new DatabaseHelper("Server=localhost; Database=expense_tracker_db;User ID=root;Password=Mk95161447!;Port=3306;");
+            var dbHelper = new DatabaseHelper();
 
             // Act
             var user = new User("izzy@gmail.com", "IsabelK", "Isabel", "aaaaaaaaaa", "bbbbbbbbbbbb");
@@ -32,7 +32,7 @@ namespace ExpenseTracker.Tests.Helper
         public void Test_AddCategory()
         {
             // Arrange
-            var dbHelper = new DatabaseHelper("Server=localhost;Database=expense_tracker_db;User ID=root;Password=Mk95161447!;Port=3306;");
+            var dbHelper = new DatabaseHelper();
             var category = new Catagory("Clothes");
 
             // Act
@@ -50,7 +50,7 @@ namespace ExpenseTracker.Tests.Helper
         public void Test_AddExpense()
         {
             // Arrange
-            var dbHelper = new DatabaseHelper("Server=localhost;Database=expense_tracker_db;User ID=root;Password=Mk95161447!;Port=3306;");
+            var dbHelper = new DatabaseHelper();
   
             var expense = new Expense(10.00M, DateTime.Now, "test");
 

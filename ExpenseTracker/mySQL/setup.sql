@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS User (
         -- public string Salt {get; set;}
         -- public List<Expense> Expenses {get; set;} = new List<Expense>();
         
-    Id INT AUTO_INCREMENT PRIMARY KEY
+    Id INT AUTO_INCREMENT PRIMARY KEY,
     Username VARCHAR(100) NOT NULL,
     Name VARCHAR(100),
     Email VARCHAR(100) UNIQUE,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Catagory(
     -- public string Name {get; set;}
     -- public List<Expense> Expenses {get; set;} = new List<Expense>();
 
-    Id INT AUTO_INCREMENT PRIMARY KEY
+    Id INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(100)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS Expense(
         -- public Catagory Category {get; set;}
         -- public int UserID {get; set;}
 
-    Id INT AUTO_INCREMENT PRIMARY KEY
+    Id INT AUTO_INCREMENT PRIMARY KEY,
     Amount DECIMAL(10,2) NOT NULL,
     Date DateTime DEFAULT CURRENT_TIMESTAMP,
     Description VARCHAR(100) NOT NULL,
